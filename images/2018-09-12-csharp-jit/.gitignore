@@ -1,8 +1,0 @@
-*.svg
-*.aux
-*.log
-*.pdf
-mini-runtime.?.tex
-*.dvi
-*.fdb_latexmk
-*.fls
