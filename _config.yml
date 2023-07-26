@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : &name "Mahesh Yadav"
 description              : &description "personal description"
 url                      : https://mahesh27dx.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/maheshyadav" # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "github.com/mahesh27dx"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
