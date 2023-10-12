@@ -33,6 +33,14 @@
 <lastmod>2022-04-01T00:00:00-07:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/teaching/2023-summer-teaching-2</loc>
+<lastmod>2023-04-01T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/teaching/2023-IRTG-programming-school</loc>
+<lastmod>2023-09-27T00:00:00-07:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
@@ -46,6 +54,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/cv/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/home/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/markdown/</loc>
