@@ -6,9 +6,7 @@ author_profile: true
 ---
 
 **Research Interests**: 
-Pattern recognition, computer vision, detection and recognition of graphical 
-structures, multi-modal deep learning, natural
-language processing, visual scene parsing.
+Statistical Physics, Polymer physics, Bio-physics
 
 My research works and projects include:
 

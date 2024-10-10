@@ -11,7 +11,7 @@ title                    : "Mahesh Yadav"
 title_separator          : "-"
 name                     : &name "Mahesh Yadav"
 description              : &description "personal description"
-url                      : https://mahesh27dx.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://mahesh27dx.github.io 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "github.com/mahesh27dx"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -153,7 +153,7 @@ kramdown:
 
 # Collections
 collections:
-  publications:
+  research:
     output: true
     permalink: /:collection/:path/
   teaching:
@@ -197,10 +197,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _research
   - scope:
       path: ""
-      type: publications
+      type: research
     values:
       layout: single
       author_profile: true
