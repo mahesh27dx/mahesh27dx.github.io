@@ -290,7 +290,7 @@ tag_archive:
 #     tag: /tags/:name/
 
 # Themes
-minimal_mistakes_skin: "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # HTML Compression
 # - http://jch.penibelst.de/
