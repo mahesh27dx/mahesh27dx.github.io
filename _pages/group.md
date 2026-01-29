@@ -5,7 +5,9 @@ permalink: /group/
 author_profile: true
 ---
 # Group Leader
- Prof. Dr. Lukas Stelzl    <img src="/images/member_LukasStelzl.jpg" alt="drawing" width="200"/>
+<p>Prof. Dr. Lukas Stelzl</p>
+<img src="/images/member_LukasStelzl.jpg" alt="picture of prof. Lukas Stelzl" width="200"/>
+<p style="font-size: 0.8em; margin-top: 5px;">© IMB mainz</p>
 
 # PhD Students
 
