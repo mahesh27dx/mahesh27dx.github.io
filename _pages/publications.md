@@ -14,8 +14,8 @@ author_profile: true
 <!-- Sorting controls -->
 <div class="sorting-controls">
   <label>Sort by:</label>
-  <button id="sort-by-date" class="sort-button">Publication Date</button>
-  <button id="sort-by-citation" class="sort-button active">Citation Count</button>
+  <button id="sort-by-date" class="sort-button active">Publication Date</button>
+  <button id="sort-by-citation" class="sort-button">Citation Count</button>
 </div>
 
 <!-- Publications container -->
@@ -152,7 +152,7 @@ author_profile: true
     sortByCitationBtn.addEventListener('click', sortByCitation);
     sortByDateBtn.addEventListener('click', sortByDate);
     
-    // Initialize with citation count sorting
-    sortByCitation();
+    // Initialize with date sorting
+    sortByDate();
   });
 </script>
