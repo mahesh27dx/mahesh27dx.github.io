@@ -3,7 +3,7 @@ permalink: /
 title: "Home"
 permalink: /home/
 layout: single
-author_profile: true
+author_profile: false
 classes: wide
 ---
 
