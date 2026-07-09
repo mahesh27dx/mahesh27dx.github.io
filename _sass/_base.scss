@@ -19,6 +19,11 @@ body {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
   }
+
+  /* Per-page background color (set via `body_class` in page front matter) */
+  &.page-publications {
+    background-color: #eaf2f8;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
