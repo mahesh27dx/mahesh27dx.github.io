@@ -12,3 +12,8 @@
 #
 # Add your conferences below this line:
 # =============================================================================
+- name: "DPG Spring Meeting of the Condensed Matter Section"
+  location: "Dresden, Germany"
+  data: "March 2026"
+  presentation: "Talk: Dissecting the driving forces of Phase Separation in the RGG domains of FUS"
+  image: conferences/DPG-2026.jpeg
