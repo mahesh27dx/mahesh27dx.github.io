@@ -18,10 +18,7 @@ that drives the formation of biomolecular condensates.
 
 - Complex dynamics in soft matter and statistical physics
 - Coarse-grained and multiscale molecular dynamics simulations
-- Intrinsically disordered proteins and biomolecular condensates (phase separation)
-- Protein–RNA interactions
 - High-performance computing and novel simulation approaches
-- Data science and machine learning
 
 ## What's on the site
 
