@@ -7,20 +7,23 @@ author_profile: false
 
 {% include base_path %}
 
-{% if site.data.conferences and site.data.conferences.size > 0 %}
+{% if site.conferences and site.conferences.size > 0 %}
 <div class="conference-grid">
-  {% for conf in site.data.conferences %}
-  <div class="conference-card">
-    <div class="conference-card__image">
-      <img src="{% if conf.image and conf.image != '' %}{{ conf.image | prepend: '/images/' | prepend: base_path }}{% else %}{{ '/images/500x300.png' | prepend: base_path }}{% endif %}" alt="{{ conf.name }}">
+  {% for conf in site.conferences reversed %}
+  <a class="conference-card-link" href="{{ base_path }}{{ conf.url }}">
+    <div class="conference-card">
+      <div class="conference-card__image">
+        <img src="{% if conf.image and conf.image != '' %}{{ conf.image | prepend: '/images/' | prepend: base_path }}{% else %}{{ '/images/500x300.png' | prepend: base_path }}{% endif %}" alt="{{ conf.title }}">
+      </div>
+      <div class="conference-card__body">
+        <h3 class="conference-card__title">{{ conf.title }}</h3>
+        {% if conf.location %}<p class="conference-card__meta"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ conf.location }}</p>{% endif %}
+        {% if conf.date %}<p class="conference-card__meta"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ conf.date | date: "%B %Y" }}</p>{% endif %}
+        {% if conf.presentation %}<p class="conference-card__desc">{{ conf.presentation }}</p>{% endif %}
+        <span class="conference-card__more">View details &rarr;</span>
+      </div>
     </div>
-    <div class="conference-card__body">
-      <h3 class="conference-card__title">{{ conf.name }}</h3>
-      {% if conf.location %}<p class="conference-card__meta"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ conf.location }}</p>{% endif %}
-      {% if conf.date %}<p class="conference-card__meta"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ conf.date }}</p>{% endif %}
-      {% if conf.presentation %}<p class="conference-card__desc">{{ conf.presentation }}</p>{% endif %}
-    </div>
-  </div>
+  </a>
   {% endfor %}
 </div>
 {% else %}

@@ -92,6 +92,56 @@
   line-height: 1.5;
 }
 
+/* Whole card is a link */
+.conference-card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover { text-decoration: none; }
+  .conference-card { height: 100%; }
+}
+
+.conference-card__more {
+  display: inline-block;
+  margin-top: 0.8em;
+  color: $link-color;
+  font-size: $type-size-6;
+  font-weight: 600;
+}
+
+/* Individual conference detail page */
+.conference-detail__meta {
+  margin: 0 0 0.4em;
+  color: $gray;
+  font-size: $type-size-5;
+
+  i { margin-right: 0.4em; }
+  .sep { margin: 0 0.6em; }
+}
+
+.conference-detail__presentation {
+  margin: 0.3em 0 1.2em;
+  font-size: $type-size-4;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.conference-detail__image {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  border-radius: 6px;
+  margin: 0.5em 0 1.5em;
+  box-shadow: 0 2px 12px rgba(#000, 0.15);
+}
+
+.conference-detail__back {
+  margin-top: 2.5em;
+  font-size: $type-size-6;
+}
+
 /* Full-width content when no author sidebar is shown */
 #main.full-width {
   .page,

@@ -160,6 +160,10 @@ collections:
     output: true
     permalink: /:collection/:path/
     sort_by: date
+  conferences:
+    output: true
+    permalink: /:collection/:path/
+    sort_by: date
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -235,6 +239,13 @@ defaults:
       layout: single
       author_profile: false
       share: true
+  # _conferences
+  - scope:
+      path: ""
+      type: conferences
+    values:
+      layout: conference
+      author_profile: false
   # _home
   - scope:
       path: ""
