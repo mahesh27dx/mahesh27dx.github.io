@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main" class="full-width">
+  <article class="page conference-detail" itemscope itemtype="http://schema.org/Event">
+    <div class="page__inner-wrap">
+      <header>
+        <h1 class="page__title" itemprop="name">{{ page.title }}</h1>
+      </header>
+
+      <section class="page__content" itemprop="text">
+        <p class="conference-detail__meta">
+          {% if page.location %}<i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ page.location }}{% endif %}
+          {% if page.date %}<span class="sep">&middot;</span><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ page.date | date: "%B %Y" }}{% endif %}
+        </p>
+
+        {% if page.presentation %}
+          <p class="conference-detail__presentation">{{ page.presentation }}</p>
+        {% endif %}
+
+        {% if page.image %}
+          <img class="conference-detail__image"
+               src="{{ page.image | prepend: '/images/' | prepend: base_path }}"
+               alt="{{ page.title }}">
+        {% endif %}
+
+        {{ content }}
+
+        <p class="conference-detail__back">
+          <a href="{{ base_path }}/conferences/">&larr; Back to all conferences</a>
+        </p>
+      </section>
+    </div>
+  </article>
+</div>
