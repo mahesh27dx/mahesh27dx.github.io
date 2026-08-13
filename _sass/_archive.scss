@@ -56,6 +56,12 @@
   }
 }
 
+/* meta line under an entry title (venue / type / date / status) */
+.archive__item-meta {
+  color: $headline-meta-color;
+  font-size: $type-size-6;
+}
+
 /* remove border*/
 .page__content {
 
