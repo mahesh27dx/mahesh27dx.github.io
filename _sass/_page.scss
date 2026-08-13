@@ -273,12 +273,19 @@
 }
 
 /* Per-theme accent colours + staggered entrance */
-.research-grid .research-area:nth-child(1) { --accent: #0d9488; --accent-soft: #d1f2ee; animation-delay: 0.05s; }
-.research-grid .research-area:nth-child(2) { --accent: #2563eb; --accent-soft: #dde7fe; animation-delay: 0.12s; }
-.research-grid .research-area:nth-child(3) { --accent: #7c3aed; --accent-soft: #ece0fd; animation-delay: 0.19s; }
-.research-grid .research-area:nth-child(4) { --accent: #ea580c; --accent-soft: #fde3d3; animation-delay: 0.26s; }
-.research-grid .research-area:nth-child(5) { --accent: #db2777; --accent-soft: #fbd9ea; animation-delay: 0.33s; }
-.research-grid .research-area:nth-child(6) { --accent: #059669; --accent-soft: #d1f2e5; animation-delay: 0.40s; }
+.research-grid .research-area:nth-child(6n + 1) { --accent: #0d9488; --accent-soft: #d1f2ee; }
+.research-grid .research-area:nth-child(6n + 2) { --accent: #2563eb; --accent-soft: #dde7fe; }
+.research-grid .research-area:nth-child(6n + 3) { --accent: #7c3aed; --accent-soft: #ece0fd; }
+.research-grid .research-area:nth-child(6n + 4) { --accent: #ea580c; --accent-soft: #fde3d3; }
+.research-grid .research-area:nth-child(6n + 5) { --accent: #db2777; --accent-soft: #fbd9ea; }
+.research-grid .research-area:nth-child(6n + 6) { --accent: #059669; --accent-soft: #d1f2e5; }
+
+.research-grid .research-area:nth-child(1) { animation-delay: 0.05s; }
+.research-grid .research-area:nth-child(2) { animation-delay: 0.12s; }
+.research-grid .research-area:nth-child(3) { animation-delay: 0.19s; }
+.research-grid .research-area:nth-child(4) { animation-delay: 0.26s; }
+.research-grid .research-area:nth-child(5) { animation-delay: 0.33s; }
+.research-grid .research-area:nth-child(6) { animation-delay: 0.40s; }
 
 @media (prefers-reduced-motion: reduce) {
   .research-area { animation: none; }
