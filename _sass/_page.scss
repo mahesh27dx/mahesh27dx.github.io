@@ -47,6 +47,7 @@
   display: flex;
   flex-direction: column;
   border: 1px solid $border-color;
+  border-top: 4px solid var(--accent, #52adc8);
   border-radius: 6px;
   overflow: hidden;
   background-color: #fff;
@@ -56,6 +57,9 @@
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 18px rgba(#000, 0.15);
+
+    .conference-card__title { color: var(--accent, #52adc8); }
+    .conference-card__more  { transform: translateX(4px); }
   }
 }
 
@@ -74,6 +78,7 @@
   margin: 0 0 0.5em;
   font-size: $type-size-4;
   line-height: 1.25;
+  transition: color 0.2s ease;
 }
 
 .conference-card__meta {
@@ -83,6 +88,7 @@
 
   i {
     margin-right: 0.5em;
+    color: var(--accent, #52adc8);
   }
 }
 
@@ -94,21 +100,48 @@
 
 /* Whole card is a link */
 .conference-card-link {
+  --accent: #52adc8;
+  --accent-soft: #e6f3f7;
+
   display: block;
   height: 100%;
   text-decoration: none;
   color: inherit;
+  animation: researchFadeUp 0.55s ease both;
 
   &:hover { text-decoration: none; }
   .conference-card { height: 100%; }
 }
 
+/* Per-card accent colours (cycle every 6) + staggered entrance */
+.conference-grid .conference-card-link:nth-child(6n + 1) { --accent: #0d9488; --accent-soft: #d1f2ee; }
+.conference-grid .conference-card-link:nth-child(6n + 2) { --accent: #2563eb; --accent-soft: #dde7fe; }
+.conference-grid .conference-card-link:nth-child(6n + 3) { --accent: #7c3aed; --accent-soft: #ece0fd; }
+.conference-grid .conference-card-link:nth-child(6n + 4) { --accent: #ea580c; --accent-soft: #fde3d3; }
+.conference-grid .conference-card-link:nth-child(6n + 5) { --accent: #db2777; --accent-soft: #fbd9ea; }
+.conference-grid .conference-card-link:nth-child(6n + 6) { --accent: #059669; --accent-soft: #d1f2e5; }
+
+.conference-grid .conference-card-link:nth-child(1) { animation-delay: 0.05s; }
+.conference-grid .conference-card-link:nth-child(2) { animation-delay: 0.12s; }
+.conference-grid .conference-card-link:nth-child(3) { animation-delay: 0.19s; }
+.conference-grid .conference-card-link:nth-child(4) { animation-delay: 0.26s; }
+.conference-grid .conference-card-link:nth-child(5) { animation-delay: 0.33s; }
+.conference-grid .conference-card-link:nth-child(6) { animation-delay: 0.40s; }
+
 .conference-card__more {
   display: inline-block;
   margin-top: 0.8em;
-  color: $link-color;
+  color: var(--accent, #52adc8);
   font-size: $type-size-6;
   font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .conference-card-link { animation: none; }
+  .conference-card,
+  .conference-card__title,
+  .conference-card__more { transition: none; }
 }
 
 /* Individual conference detail page */
