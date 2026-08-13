@@ -96,6 +96,10 @@ $link-color-visited         : mix(#fff, $link-color, 25%);
 $masthead-link-color        : $primary-color;
 $masthead-link-color-hover  : mix(#000, $primary-color, 25%);
 
+/* archive entry (headline) titles — Publications, Talks, Teaching, Blog Posts */
+$headline-color             : #1f3a5f; // elegant deep navy
+$headline-color-hover       : #2c5c8a;
+
 
 /*
    Breakpoints
