@@ -185,6 +185,26 @@
   margin: 0.5em 0 2em;
 }
 
+.research-figure {
+  margin: 1.5em 0 2.5em;
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  figcaption {
+    margin: 0.7em auto 0;
+    max-width: 42em;
+    font-size: $type-size-6;
+    line-height: 1.5;
+    color: $gray;
+  }
+}
+
 .research-heading {
   margin-top: 1.6em;
   padding-bottom: 0.3em;
