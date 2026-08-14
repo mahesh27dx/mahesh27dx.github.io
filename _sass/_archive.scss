@@ -62,6 +62,15 @@
   font-size: $type-size-6;
 }
 
+/* entry links under the title (Read more, citation / DOI, download) —
+   match the green meta so they are consistent; titles stay charcoal (h2) */
+.archive__item p a {
+  color: $headline-meta-color;
+
+  &:visited { color: $headline-meta-color; }
+  &:hover   { color: $headline-meta-color-hover; }
+}
+
 /* remove border*/
 .page__content {
 
