@@ -8,8 +8,6 @@ date: 2022-04-01
 location: "Berlin, Germany"
 ---
 
-Basics of thermodynamics and statistical mechanics.
+Mentored graduate students through the foundations of thermodynamics and statistical mechanics, connecting microscopic models to macroscopic thermodynamic behaviour.
 
-Contents:
-1. Introduction to thermodynamics
-1.1 Intro
+**Topics covered:** laws of thermodynamics and thermodynamic potentials; statistical ensembles and partition functions; entropy and free energies; applications to ideal and interacting systems.

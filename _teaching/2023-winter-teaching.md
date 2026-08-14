@@ -1,5 +1,5 @@
 ---
-title: "Advance Statistical Physics (Tutor)"
+title: "Advanced Statistical Physics (Tutor)"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/2023-winter-teaching
@@ -8,13 +8,6 @@ date: 2023-09-01
 location: "Mainz, Germany"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Tutor for the graduate Advanced Statistical Physics course, leading problem-solving sessions that extended the lecture material toward interacting systems and collective behaviour.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+**Topics covered:** interacting many-body systems; phase transitions and critical phenomena; correlation functions and response; analytical and computational methods of modern statistical mechanics.

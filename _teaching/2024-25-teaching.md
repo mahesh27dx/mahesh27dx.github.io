@@ -1,5 +1,5 @@
 ---
-title: "Advance Statistical Physics (Tutor)"
+title: "Advanced Statistical Physics (Tutor)"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/2024-25-teaching
@@ -8,4 +8,6 @@ date: 2024-09-01
 location: "Mainz, Germany"
 ---
 
-This is a description of a teaching experience. 
+Tutor for the graduate Advanced Statistical Physics course (2024/25 iteration), guiding students through weekly problem sets and the concepts underpinning the lectures.
+
+**Topics covered:** statistical ensembles and partition functions; phase transitions and critical phenomena; fluctuations and response; selected non-equilibrium concepts.

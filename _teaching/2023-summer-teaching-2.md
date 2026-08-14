@@ -8,13 +8,6 @@ date: 2023-04-01
 location: "Mainz, Germany"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Led weekly tutorial sessions accompanying the undergraduate quantum mechanics course, guiding students through problem sets and the core concepts of the lectures.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+**Topics covered:** the Schrödinger equation; operators, observables and measurement; potential wells and the harmonic oscillator; angular momentum and the hydrogen atom.

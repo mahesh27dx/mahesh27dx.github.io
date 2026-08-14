@@ -8,13 +8,6 @@ date: 2023-09-27
 location: "Mainz, Germany"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+A hands-on programming tutorial at the IRTG school introducing coarse-grained molecular modelling — how to build reduced-resolution models, run simulations, and analyse the resulting trajectories.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+**Topics covered:** motivation for coarse-graining; mapping schemes and effective interactions; setting up and running coarse-grained simulations; basic trajectory analysis in Python.
