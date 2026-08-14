@@ -9,25 +9,48 @@ redirect_from:
 
 {% include base_path %}
 
-<p><em>PhD researcher in computational statistical physics and soft matter theory,
-Johannes Gutenberg University Mainz.</em></p>
+<p><em>PhD candidate in physics, Johannes Gutenberg University Mainz &mdash; non-equilibrium
+statistical mechanics, molecular simulations, machine learning, and high-performance computing.</em></p>
+
+<p>
+<i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:mahesh.yadav@uni-mainz.de">mahesh.yadav@uni-mainz.de</a>
+&nbsp;&middot;&nbsp;
+<i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/mahesh27dx">mahesh27dx</a>
+&nbsp;&middot;&nbsp;
+<i class="fas fa-map-marker-alt" aria-hidden="true"></i> Jakob-Welder-Weg 36, 55128 Mainz, Germany
+</p>
+
+Research interests
+======
+* Non-equilibrium statistical mechanics
+* Molecular simulations
+* Machine learning
+* High-performance computing
+
+Experience
+======
+* **Research Associate**, Johannes Gutenberg University, Mainz, Germany *(2023 &ndash; present)*
+  * Project: *Polymer concepts related to post-translational modifications of neurodegeneration-linked RNA-binding proteins* (CRC 1551)
 
 Education
 ======
-* Ph.D. in Physics — Computational Statistical Physics &amp; Soft Matter Theory, Johannes Gutenberg University Mainz, Germany *(ongoing)*
-* M.Sc. in Physics — *institution, year — to be added*
-* B.Sc. in Physics — *institution, year — to be added*
+* **Ph.D. in Physics** (candidate), Johannes Gutenberg University, Mainz, Germany *(2023 &ndash; present)*
+  * Research: phase behaviour of RNA-binding proteins
+  * Supervisors: Prof. Dr. Lukas Stelzl, Prof. Dr. Friederike Schmid
+* **M.Sc. in Physics**, Free University Berlin, Germany *(2020 &ndash; 2022)*
+  * Thesis: characterization of diffusion anomalies of phospholipids and proteins on a crowded bilayer
+  * Supervisors: Prof. Dr. Felix H&ouml;fling, Prof. Dr. Roland Netz
+* **B.Sc. in Physics**, University of Leipzig, Germany *(2015 &ndash; 2020)*
+  * Thesis: unbinding transition of two grafted polymers
+  * Supervisor: Prof. Dr. Wolfhard Janke
 
-Research experience
+Skills
 ======
-* **Doctoral Researcher**, Statistical Physics and Soft Matter Theory group, Institute of Physics, Johannes Gutenberg University Mainz
-  * Large-scale molecular simulations of intrinsically disordered proteins (FUS, TDP-43) and biomolecular phase separation
-  * Coarse-grained (Martini) and multiscale modelling on high-performance computing clusters
+* **Programming:** C/C++, Python, shell scripting
+* **Software tools:** GNU Make, Git, CUDA, GROMACS, Vim, LaTeX
+* **Languages:** Hindi (mother tongue), English (full professional), German (limited working), Sanskrit (elementary)
 
-Technical skills
+Other interests
 ======
-* Molecular dynamics simulation (GROMACS)
-* Martini coarse-grained force field; multiscale modelling
-* High-performance computing (HPC)
-* Python, data analysis &amp; scientific computing
-* Machine learning for complex systems
+Cryptography, open source, philosophy, software engineering, travel, typography &amp; graphic
+design, UI/UX, and vegetarian cooking.
