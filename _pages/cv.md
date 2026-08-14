@@ -31,21 +31,3 @@ Technical skills
 * High-performance computing (HPC)
 * Python, data analysis &amp; scientific computing
 * Machine learning for complex systems
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
-Conferences
-======
-  <ul>{% for conf in site.conferences reversed %}
-    <li>{{ conf.title }}, {{ conf.location }}, {{ conf.date | date: "%B %Y" }}{% if conf.presentation %} &mdash; {{ conf.presentation }}{% endif %}</li>
-  {% endfor %}</ul>
-
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
