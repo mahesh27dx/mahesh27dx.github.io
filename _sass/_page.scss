@@ -38,7 +38,7 @@
    ========================================================================== */
 .conference-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5em;
   margin-top: 1.5em;
 }
@@ -164,7 +164,7 @@
 .conference-detail__image {
   display: block;
   width: 100%;
-  max-width: 760px;
+  height: auto;
   border-radius: 6px;
   margin: 0.5em 0 1.5em;
   box-shadow: 0 2px 12px rgba(#000, 0.15);
