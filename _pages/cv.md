@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Resume"
 permalink: /cv/
 author_profile: false
 redirect_from:
@@ -9,51 +9,43 @@ redirect_from:
 
 {% include base_path %}
 
+<p><em>PhD researcher in computational statistical physics and soft matter theory,
+Johannes Gutenberg University Mainz.</em></p>
+
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D. in Physics — Computational Statistical Physics &amp; Soft Matter Theory, Johannes Gutenberg University Mainz, Germany *(ongoing)*
+* M.Sc. in Physics — *institution, year — to be added*
+* B.Sc. in Physics — *institution, year — to be added*
 
-Work experience
+Research experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* **Doctoral Researcher**, Statistical Physics and Soft Matter Theory group, Institute of Physics, Johannes Gutenberg University Mainz
+  * Large-scale molecular simulations of intrinsically disordered proteins (FUS, TDP-43) and biomolecular phase separation
+  * Coarse-grained (Martini) and multiscale modelling on high-performance computing clusters
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+Technical skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Molecular dynamics simulation (GROMACS)
+* Martini coarse-grained force field; multiscale modelling
+* High-performance computing (HPC)
+* Python, data analysis &amp; scientific computing
+* Machine learning for complex systems
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+  <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+
+Conferences
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
+  <ul>{% for conf in site.conferences reversed %}
+    <li>{{ conf.title }}, {{ conf.location }}, {{ conf.date | date: "%B %Y" }}{% if conf.presentation %} &mdash; {{ conf.presentation }}{% endif %}</li>
   {% endfor %}</ul>
-  
+
 Teaching
 ======
-  <ul>{% for post in site.teaching %}
+  <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
