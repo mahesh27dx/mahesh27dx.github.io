@@ -337,6 +337,108 @@
   li { margin-bottom: 0.6em; line-height: 1.5; }
 }
 
+/* ==========================================================================
+   RESUME
+   ========================================================================== */
+.resume {
+  max-width: 52em;
+}
+
+.resume__tagline {
+  margin: 0.2em 0 0.5em;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+.resume__contact {
+  margin: 0 0 2em;
+  font-size: $type-size-6;
+  color: $gray;
+
+  i { margin-right: 0.3em; color: $headline-meta-color; }
+  a { color: $headline-meta-color; }
+  .resume__sep { margin: 0 0.7em; color: $light-gray; }
+}
+
+.resume-section {
+  margin-bottom: 2em;
+}
+
+.resume-section__title {
+  margin: 0 0 1em;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid $border-color;
+  color: $headline-color;
+  font-size: 0.95em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.resume-entry {
+  margin-bottom: 1.2em;
+
+  &:last-child { margin-bottom: 0; }
+}
+
+.resume-entry__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+}
+
+.resume-entry__title {
+  font-weight: 700;
+  color: $headline-color;
+}
+
+.resume-entry__date {
+  flex-shrink: 0;
+  font-size: $type-size-6;
+  color: $gray;
+  white-space: nowrap;
+}
+
+.resume-entry__sub {
+  margin-top: 0.1em;
+}
+
+.resume-entry__desc {
+  margin: 0.3em 0 0;
+  font-size: $type-size-6;
+  line-height: 1.55;
+}
+
+.resume-entry__meta {
+  color: $gray;
+  font-style: italic;
+}
+
+.resume-interests {
+  columns: 2;
+  margin: 0;
+  padding-left: 1.2em;
+
+  li { margin-bottom: 0.3em; }
+}
+
+.resume-skills {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.45em 1.3em;
+  margin: 0;
+
+  dt { font-weight: 700; color: $headline-color; }
+  dd { margin: 0; }
+}
+
+@include breakpoint(max-width 480px) {
+  .resume-interests { columns: 1; }
+  .resume-skills { grid-template-columns: 1fr; gap: 0.1em 0; }
+  .resume-skills dt { margin-top: 0.5em; }
+}
+
 /* Full-width content when no author sidebar is shown */
 #main.full-width {
   .page,
