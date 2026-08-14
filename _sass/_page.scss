@@ -185,6 +185,14 @@
   margin: 0.5em 0 2em;
 }
 
+.research-figures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em 2em;
+  margin: 1.5em 0 2.5em;
+}
+
 .research-figure {
   margin: 1.5em 0 2.5em;
   text-align: center;
@@ -203,6 +211,14 @@
     line-height: 1.5;
     color: $gray;
   }
+}
+
+.research-figures .research-figure {
+  flex: 1 1 320px;
+  max-width: 460px;
+  margin: 0;
+
+  img { max-width: 100%; }
 }
 
 .research-heading {
