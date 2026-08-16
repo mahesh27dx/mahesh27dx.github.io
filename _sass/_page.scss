@@ -185,12 +185,21 @@
   margin: 0.5em 0 2em;
 }
 
-.research-figures {
+.research-hero {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5em 2em;
-  margin: 1.5em 0 2.5em;
+  align-items: center;
+  gap: 1.5em 2.5em;
+  margin: 1em 0 2.5em;
+}
+
+.research-hero__text {
+  flex: 1 1 340px;
+
+  .research-intro {
+    max-width: none;
+    margin: 0;
+  }
 }
 
 .research-figure {
@@ -213,9 +222,8 @@
   }
 }
 
-.research-figures .research-figure {
-  flex: 1 1 320px;
-  max-width: 460px;
+.research-hero__figure {
+  flex: 0 1 380px;
   margin: 0;
 
   img { max-width: 100%; }

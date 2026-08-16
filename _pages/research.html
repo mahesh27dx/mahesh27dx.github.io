@@ -7,27 +7,23 @@ author_profile: false
 
 {% include base_path %}
 
-<p class="research-intro">
-  My research lies at the interface of <strong>computational statistical physics</strong>,
-  <strong>soft matter</strong>, and <strong>biophysics</strong>. Using large-scale molecular
-  simulations together with data-driven methods, I study how <strong>intrinsically disordered
-  proteins</strong> organise themselves in space and time, and how their collective behaviour
-  gives rise to <strong>biomolecular condensates</strong> through liquid&ndash;liquid phase
-  separation.
-</p>
+<div class="research-hero">
+  <div class="research-hero__text">
+    <p class="research-intro">
+      My research lies at the interface of <strong>computational statistical physics</strong>,
+      <strong>soft matter</strong>, and <strong>biophysics</strong>. Using large-scale molecular
+      simulations together with data-driven methods, I study how <strong>intrinsically disordered
+      proteins</strong> organise themselves in space and time, and how their collective behaviour
+      gives rise to <strong>biomolecular condensates</strong> through liquid&ndash;liquid phase
+      separation.
+    </p>
+  </div>
 
-<div class="research-figures">
-  <figure class="research-figure">
+  <figure class="research-figure research-hero__figure">
     <img src="{{ '/images/research/condensate-droplet.jpg' | prepend: base_path }}"
          alt="Coarse-grained condensate droplet coloured by protein chain">
     <figcaption>A coarse-grained biomolecular condensate formed by phase separation of
     intrinsically disordered proteins &mdash; each colour is an individual protein chain.</figcaption>
-  </figure>
-  <figure class="research-figure">
-    <img src="{{ '/images/research/condensate-solvent.jpg' | prepend: base_path }}"
-         alt="The condensate simulated in explicit solvent">
-    <figcaption>The same condensate in an explicit-solvent simulation box, with water and ions
-    shown as fine points.</figcaption>
   </figure>
 </div>
 
