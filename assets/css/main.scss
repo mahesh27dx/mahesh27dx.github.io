@@ -155,7 +155,7 @@
   }
 }
 
-// affiliated institutions' logos (bottom of home + contact pages)
+// affiliated institutions' logos (sidebar; also usable in page content)
 .affiliations {
   display: flex;
   flex-wrap: wrap;
@@ -182,5 +182,74 @@
       filter: grayscale(0%);
       opacity: 1;
     }
+  }
+}
+
+// in the narrow author sidebar: one logo per row, larger
+.sidebar .affiliations {
+  flex-direction: column;
+  gap: 1.25em;
+  margin: 1.5em 0 0;
+  padding-top: 1.25em;
+
+  img {
+    max-height: 48px;
+    max-width: 100%;
+  }
+}
+
+// looping simulation clip in the sidebar avatar slot
+.author__avatar-video {
+  max-width: 175px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+
+  @include breakpoint($large) {
+    padding: 5px;
+    border: 1px solid $border-color;
+  }
+}
+
+// big centered welcome headline on the home page
+.page__content .home-welcome {
+  margin-top: 0;
+  text-align: center;
+  font-size: $type-size-3 * 2;
+}
+
+// funder logos on the home page (under the Funding heading)
+.page__content .funding-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1.5em 2em;
+  align-items: center;
+  justify-items: center;
+  margin: 1.5em 0 2.5em;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    text-decoration: none;
+  }
+
+  img {
+    max-height: 80px;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+// group photo on the home page, above the intro
+.page__content .home-photo {
+  margin: 0 0 1.5em;
+
+  img {
+    width: 100%;
+    border-radius: $border-radius;
   }
 }

@@ -38,5 +38,3 @@ LinkedIn . . .
     Open directions in Google Maps
   </a>
 </p>
-
-{% include affiliations.html %}

@@ -9614,3 +9614,64 @@ img.mfp-img {
   filter: grayscale(0%);
   opacity: 1;
 }
+
+.sidebar .affiliations {
+  flex-direction: column;
+  gap: 1.25em;
+  margin: 1.5em 0 0;
+  padding-top: 1.25em;
+}
+.sidebar .affiliations img {
+  max-height: 48px;
+  max-width: 100%;
+}
+
+.author__avatar-video {
+  max-width: 175px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+@media (min-width: 57.8125em) {
+  .author__avatar-video {
+    padding: 5px;
+    border: 1px solid #f1f1f1;
+  }
+}
+
+.page__content .home-welcome {
+  margin-top: 0;
+  text-align: center;
+  font-size: 3.126em;
+}
+
+.page__content .funding-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1.5em 2em;
+  align-items: center;
+  justify-items: center;
+  margin: 1.5em 0 2.5em;
+}
+.page__content .funding-logos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  text-decoration: none;
+}
+.page__content .funding-logos img {
+  max-height: 80px;
+  max-width: 100%;
+  width: auto;
+}
+
+.page__content .home-photo {
+  margin: 0 0 1.5em;
+}
+.page__content .home-photo img {
+  width: 100%;
+  border-radius: 4px;
+}

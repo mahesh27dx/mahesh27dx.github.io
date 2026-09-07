@@ -77,8 +77,9 @@ analytics:
 # Site Author
 author:
   name             : "Stelzl Lab"
-  avatar           : "profile_pic.png"
-  bio              : 
+  avatar           : "lab-avatar-poster.jpg"   # still shown while the clip loads / under reduced-motion
+  avatar_video     : "lab-avatar.mp4"          # looping simulation clip in the sidebar avatar slot
+  bio              :
   location         : "Mainz, Germany"
   location_url     : "/contact/"
   employer         :

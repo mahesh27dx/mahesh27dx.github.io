@@ -184,7 +184,20 @@
 
   <div class="author__avatar">
     
-    	<img src="http://localhost:4000/images/profile_pic.png" class="author__avatar large-avatar" alt="Stelzl Lab">
+    
+      
+      <video class="author__avatar-video large-avatar" poster="http://localhost:4000/images/lab-avatar-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Stelzl Lab — molecular simulation">
+        <source src="http://localhost:4000/files/videos/lab-avatar.mp4" type="video/mp4">
+      </video>
+      <script>
+        (function () {
+          var v = document.currentScript.previousElementSibling;
+          if (v && v.tagName === 'VIDEO' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            v.removeAttribute('autoplay');
+            v.pause();
+          }
+        })();
+      </script>
     
   </div>
 
@@ -237,6 +250,24 @@
       
       
     </ul>
+
+    
+
+<div class="affiliations">
+  <a href="https://www.uni-mainz.de/" target="_blank" rel="noopener" title="Johannes Gutenberg University Mainz">
+    <img src="http://localhost:4000/images/jgu_logo_cropped.svg" alt="Johannes Gutenberg University Mainz" loading="lazy">
+  </a>
+  <a href="https://www.bio.uni-mainz.de/" target="_blank" rel="noopener" title="Faculty of Biology, JGU Mainz">
+    <img src="http://localhost:4000/images/fb10_biology.jpg" alt="Faculty of Biology, JGU Mainz" loading="lazy">
+  </a>
+  <a href="https://www.imb.de/" target="_blank" rel="noopener" title="Institute of Molecular Biology (IMB)">
+    <img src="http://localhost:4000/images/imb.png" alt="Institute of Molecular Biology (IMB)" loading="lazy">
+  </a>
+  <a href="https://www.bio.uni-mainz.de/imp/" target="_blank" rel="noopener" title="Institute of Molecular Physiology (imP)">
+    <img src="http://localhost:4000/images/Logo-iMP-english.png" alt="Institute of Molecular Physiology (imP)" loading="lazy">
+  </a>
+</div>
+
   </div>
 </div>
 
@@ -258,19 +289,14 @@
   <div class="group-leader__info">
     <h2 id="prof-dr-lukas-stelzl">Prof. Dr. Lukas Stelzl</h2>
 
-    <p><strong>Positions held</strong>
-<em>Since 2024:</em> Professor of Biomolecular Simulations, Johannes Gutenberg University Mainz and Adjunct Director, Institute of Molecular Biology (IMB), Mainz
-<em>2020 – 2024:</em> ReALity Junior Group Leader and IMB Associate Group Leader, Faculty of Biology and KOMET1, Institute of Physics, Johannes Gutenberg University Mainz and Institute of Molecular Biology (IMB), Mainz
+    <p><strong>Positions held</strong><br />
+<em>Since 2024:</em> Professor of Biomolecular Simulations, Johannes Gutenberg University Mainz and Adjunct Director, Institute of Molecular Biology (IMB), Mainz<br />
+<em>2020 – 2024:</em> ReALity Junior Group Leader and IMB Associate Group Leader, Faculty of Biology and KOMET1, Institute of Physics, Johannes Gutenberg University Mainz and Institute of Molecular Biology (IMB), Mainz<br />
 <em>2015 – 2020:</em> Postdoctoral fellow, Department of Theoretical Biophysics, Max Planck Institute of Biophysics, Frankfurt am Main</p>
 
-    <p><strong>Education</strong>
-<em>2015:</em> DPhil in Biochemistry, University of Oxford, UK
+    <p><strong>Education</strong><br />
+<em>2015:</em> DPhil in Biochemistry, University of Oxford, UK<br />
 <em>2010:</em> MBiochem, Molecular and Cellular Biochemistry, University of Oxford, UK</p>
-
-    <p><strong>Funding</strong>
-ReALity – Resilience, Adaptation and Longevity, M3ODEL, Forschungsinitiative Rheinland-Pfalz and IMB
-—&gt; Maybe include the Funding somewhere else?</p>
-
   </div>
 </div>
 
@@ -318,8 +344,8 @@ ReALity – Resilience, Adaptation and Longevity, M3ODEL, Forschungsinitiative R
     </tr>
     <tr>
       <td class="member-table__person">
-        <img src="/images/profile.png" alt="Denis Aribas Blanco" width="200" /><br />
-        <strong>Denis Aribas Blanco</strong>
+        <img src="/images/profile.png" alt="Denis Arribas Blanco" width="200" /><br />
+        <strong>Denis Arribas Blanco</strong>
       </td>
       <td class="member-table__interest"><!-- TODO: short research interest --></td>
       <td><!-- TODO: <a href="https://github.com/USERNAME">GitHub</a> --></td>
@@ -432,6 +458,10 @@ ReALity – Resilience, Adaptation and Longevity, M3ODEL, Forschungsinitiative R
   </thead>
   <tbody>
     <tr>
+      <td><strong>Lilia Brauns</strong></td>
+      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+    </tr>
+    <tr>
       <td><strong>Beyza Bulut</strong></td>
       <td class="member-table__interest"><!-- TODO: thesis title --></td>
     </tr>
@@ -448,8 +478,75 @@ ReALity – Resilience, Adaptation and Longevity, M3ODEL, Forschungsinitiative R
       <td class="member-table__interest"><!-- TODO: thesis title --></td>
     </tr>
     <tr>
+      <td><strong>Theresa Huntemann</strong></td>
+      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+    </tr>
+    <tr>
+      <td><strong>Sergios Leftheriotis</strong></td>
+      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+    </tr>
+    <tr>
+      <td><strong>Dennis Martin</strong></td>
+      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+    </tr>
+    <tr>
+      <td><strong>Antonia Niklasch</strong></td>
+      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+    </tr>
+    <tr>
+      <td><strong>Antonia Preuß</strong></td>
+      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+    </tr>
+    <tr>
+      <td><strong>Moxian Qian</strong></td>
+      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+    </tr>
+    <tr>
+      <td><strong>Minoo Rostami</strong></td>
+      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+    </tr>
+    <tr>
+      <td><strong>Sascha Schwarzhaupt</strong></td>
+      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+    </tr>
+    <tr>
       <td><strong>Joshua Zeitvogel</strong></td>
       <td class="member-table__interest"><!-- TODO: thesis title --></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="bachelor-students">Bachelor Students</h1>
+
+<table class="member-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Bachelor thesis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Jim Roth</strong></td>
+      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="student-research-assistants">Student Research Assistants</h1>
+
+<table class="member-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Philip Mundt</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Rebecca Ziora</strong></td>
     </tr>
   </tbody>
 </table>

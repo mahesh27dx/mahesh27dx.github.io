@@ -184,7 +184,20 @@
 
   <div class="author__avatar">
     
-    	<img src="http://localhost:4000/images/profile_pic.png" class="author__avatar large-avatar" alt="Stelzl Lab">
+    
+      
+      <video class="author__avatar-video large-avatar" poster="http://localhost:4000/images/lab-avatar-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Stelzl Lab — molecular simulation">
+        <source src="http://localhost:4000/files/videos/lab-avatar.mp4" type="video/mp4">
+      </video>
+      <script>
+        (function () {
+          var v = document.currentScript.previousElementSibling;
+          if (v && v.tagName === 'VIDEO' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            v.removeAttribute('autoplay');
+            v.pause();
+          }
+        })();
+      </script>
     
   </div>
 
@@ -237,6 +250,24 @@
       
       
     </ul>
+
+    
+
+<div class="affiliations">
+  <a href="https://www.uni-mainz.de/" target="_blank" rel="noopener" title="Johannes Gutenberg University Mainz">
+    <img src="http://localhost:4000/images/jgu_logo_cropped.svg" alt="Johannes Gutenberg University Mainz" loading="lazy">
+  </a>
+  <a href="https://www.bio.uni-mainz.de/" target="_blank" rel="noopener" title="Faculty of Biology, JGU Mainz">
+    <img src="http://localhost:4000/images/fb10_biology.jpg" alt="Faculty of Biology, JGU Mainz" loading="lazy">
+  </a>
+  <a href="https://www.imb.de/" target="_blank" rel="noopener" title="Institute of Molecular Biology (IMB)">
+    <img src="http://localhost:4000/images/imb.png" alt="Institute of Molecular Biology (IMB)" loading="lazy">
+  </a>
+  <a href="https://www.bio.uni-mainz.de/imp/" target="_blank" rel="noopener" title="Institute of Molecular Physiology (imP)">
+    <img src="http://localhost:4000/images/Logo-iMP-english.png" alt="Institute of Molecular Physiology (imP)" loading="lazy">
+  </a>
+</div>
+
   </div>
 </div>
 
@@ -616,7 +647,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/" rel="permalink"></a>
+        <a href="http://localhost:4000/" rel="permalink">Biomolecular Simulation</a>
       
     </h2>
     

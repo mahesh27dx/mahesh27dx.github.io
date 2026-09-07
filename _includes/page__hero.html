@@ -56,6 +56,7 @@
     </script>
   {% endif %}
   {% if page.header.overlay_color or page.header.overlay_image or page.header.overlay_video %}
+    {% unless page.header.hide_text %}
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
         {% if paginator %}
@@ -74,6 +75,7 @@
         <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
       {% endif %}
     </div>
+    {% endunless %}
   {% else %}
     <img src="{{ img_path }}" alt="{{ page.title }}" class="page__hero-image">
   {% endif %}
