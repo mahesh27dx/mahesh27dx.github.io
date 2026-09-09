@@ -85,12 +85,13 @@ author:
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
-  email            : 
-  researchgate     : 
+  email            :
+  researchgate     :
   github           : "comp-mol-biol"
-  buymeacoffee     : 
-  stackoverflow    : 
-  twitter          : "l_stelzl"
+  linkedin         : "lukas-stelzl-ba3705374"
+  buymeacoffee     :
+  stackoverflow    :
+  bluesky          : "https://bsky.app/profile/did:plc:tzichnx7z2hq7fj24bx2shah"
   youtube          :
 
 # Reading Files

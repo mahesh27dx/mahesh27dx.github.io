@@ -30,6 +30,36 @@ author_profile: true
 </div>
 
 
+# Postdocs
+
+<table class="member-table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Research interest</th>
+      <th>Code</th>
+      <th>Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="member-table__person">
+        <img src="/images/profile.png" alt="Xiaofei Ping" width="200"/><br/>
+        <strong>Xiaofei Ping</strong>
+      </td>
+      <td class="member-table__interest"> </td>
+      <td></td>
+      <td class="member-table__contact">
+        <a href="mailto:xiaoping@students.uni-mainz.de">xiaoping@students.uni-mainz.de</a><br/>
+        Johannes-von-Müller-Weg 6<br/>
+        Nat.- and Med.-building: 1321<br/>
+        55128 Mainz<br/>
+        Room 00-125
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 # PhD Students
 
 <table class="member-table">
@@ -106,8 +136,8 @@ author_profile: true
         <img src="/images/profile.png" alt="Leon Persch" width="200"/><br/>
         <strong>Leon Persch</strong>
       </td>
-      <td class="member-table__interest"><!-- TODO: short research interest --></td>
-      <td><!-- TODO: <a href="https://github.com/USERNAME">GitHub</a> --></td>
+      <td class="member-table__interest">Intrinsically disordered proteins, Alchemical Free Energy Calculations, Gromacs, Martini, ... </td>
+      <td><a href="https://github.com/LeonPersch">GitHub</a></td>
       <td class="member-table__contact">
         <a href="mailto:lepersch@students.uni-mainz.de">lepersch@students.uni-mainz.de</a><br/>
         Johannes-von-Müller-Weg 6<br/>
@@ -152,11 +182,13 @@ author_profile: true
         <strong>Mahesh Yadav</strong>
       </td>
       <td class="member-table__interest"><!-- TODO: short research interest --></td>
-      <td><!-- TODO: <a href="https://github.com/USERNAME">GitHub</a> --></td>
+      <td><a href="www.mahesh27dx.github.io">GitHub</a></td>
       <td class="member-table__contact">
         <a href="mailto:mahesh.yadav@uni-mainz.de">mahesh.yadav@uni-mainz.de</a><br/>
-        Physics??<br/>
-        55128 Mainz
+        Staudingerweg 9<br/>
+        Phys.- and Mat.-building: 2413<br/>
+        55128 Mainz<br/>
+        Room 01-517
       </td>
     </tr>
     <tr>
@@ -189,20 +221,13 @@ author_profile: true
   </thead>
   <tbody>
     <tr>
-      <td><strong>Lilia Brauns</strong></td>
-      <td class="member-table__interest"><!-- TODO: thesis title --></td>
-    </tr>
-    <tr>
-      <td><strong>Beyza Bulut</strong></td>
-      <td class="member-table__interest"><!-- TODO: thesis title --></td>
-    </tr>
-    <tr>
       <td><strong>Olga Corrado</strong></td>
       <td class="member-table__interest"><!-- TODO: thesis title --></td>
     </tr>
     <tr>
       <td><strong>Christian Fabri</strong></td>
-      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+      <td class="member-table__interest">Extending Neural Network-Based Backmapping for
+Post-Translationally Modified Protein Condensates</td>
     </tr>
     <tr>
       <td><strong>Stefan Grünewald Borras</strong></td>
@@ -221,20 +246,16 @@ author_profile: true
       <td class="member-table__interest"><!-- TODO: thesis title --></td>
     </tr>
     <tr>
-      <td><strong>Antonia Niklasch</strong></td>
-      <td class="member-table__interest"><!-- TODO: thesis title --></td>
-    </tr>
-    <tr>
       <td><strong>Antonia Preuß</strong></td>
       <td class="member-table__interest"><!-- TODO: thesis title --></td>
     </tr>
     <tr>
       <td><strong>Moxian Qian</strong></td>
-      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+      <td class="member-table__interest">Stochastic Path Sampling for Protein Conformational Ensembles</td>
     </tr>
     <tr>
       <td><strong>Minoo Rostami</strong></td>
-      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+      <td class="member-table__interest">Antimicrobial peptides interacting with bacterial membranes</td>
     </tr>
     <tr>
       <td><strong>Sascha Schwarzhaupt</strong></td>
@@ -258,6 +279,10 @@ author_profile: true
   </thead>
   <tbody>
     <tr>
+      <td><strong>Beyza Bulut</strong></td>
+      <td class="member-table__interest"><!-- TODO: thesis title --></td>
+    </tr>
+    <tr>
       <td><strong>Jim Roth</strong></td>
       <td class="member-table__interest"><!-- TODO: thesis title --></td>
     </tr>
@@ -274,7 +299,7 @@ author_profile: true
   </thead>
   <tbody>
     <tr>
-      <td><strong>Philip Mundt</strong></td>
+      <td><strong>Philip Frederic Mundt</strong></td>
     </tr>
     <tr>
       <td><strong>Rebecca Ziora</strong></td>
@@ -297,11 +322,6 @@ author_profile: true
       <td><strong>Kumar Gaurav</strong></td>
       <td class="member-table__interest"><!-- TODO: short research interest --></td>
       <td class="member-table__contact"><a href="mailto:kugaurav@uni-mainz.de">kugaurav@uni-mainz.de</a></td>
-    </tr>
-    <tr>
-      <td><strong>Xiaofei Ping</strong></td>
-      <td class="member-table__interest"><!-- TODO: short research interest --></td>
-      <td class="member-table__contact"><!-- TODO: contact --></td>
     </tr>
     <tr>
       <td><strong>Arya Changiarath Sivadasan</strong></td>
