@@ -8,8 +8,9 @@ author_profile: false
 {% include base_path %}
 
 {% if site.conferences and site.conferences.size > 0 %}
+{% assign conferences_by_date = site.conferences | sort: "date" | reverse %}
 <div class="conference-grid">
-  {% for conf in site.conferences reversed %}
+  {% for conf in conferences_by_date %}
   <a class="conference-card-link" href="{{ base_path }}{{ conf.url }}">
     <div class="conference-card">
       <div class="conference-card__image">
