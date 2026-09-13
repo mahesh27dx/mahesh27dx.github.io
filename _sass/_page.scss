@@ -201,8 +201,8 @@
   .research-intro {
     max-width: none;
     margin: 0;
-    font-size: 1.18em;
-    line-height: 1.75;
+    font-size: 1.02em;
+    line-height: 1.65;
   }
 }
 
@@ -229,11 +229,14 @@
 }
 
 .research-hero__figure {
-  flex: 0 1 330px;
+  flex: 0 1 460px;
   margin: 0;
 
   img,
-  video { max-width: 100%; }
+  video {
+    max-width: 100%;
+    box-shadow: 0 4px 16px rgba(#000, 0.12);
+  }
 }
 
 .research-heading {
