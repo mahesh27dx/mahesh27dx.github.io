@@ -10,6 +10,11 @@ redirect_from:
 
 To begin with, I want to thank you for visiting my blog page. The blog contains documentation of ideas, thoughts about science and philosophy.
 
+<video controls autoplay muted loop playsinline style="width:100%; max-width:720px; display:block; margin:1.5em auto; border-radius:8px;">
+  <source src="/stress-granules.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 Why writing? Without documentation, we forget how we do or improve what we did before. That's the primary concern for me. Please feel free to let me know with your feedback if there is an area of improvement in my posts. 😎
 
 In case any of my blog posts you find interesting and helpful, and you want ot thank/support me for that, you can <br/>
