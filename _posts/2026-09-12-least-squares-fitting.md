@@ -87,6 +87,12 @@ These properties make least squares mathematically convenient and practically
 useful. They also reveal its limitations: because large residuals are squared,
 an outlier can strongly influence the fit.
 
+![Observed data, the least-squares line, and vertical residuals between each observation and its fitted value](/images/least-squares/fit-and-residuals.png)
+
+*Figure 1. Each dashed vertical segment is a residual. Least squares adjusts
+the intercept and slope to minimize the sum of the squared lengths of these
+segments.*
+
 ## Analytical solution for a straight line
 
 To find the best line, differentiate $S$ with respect to both unknown
@@ -267,6 +273,10 @@ y_plot = intercept + slope * x_plot
 
 plt.scatter(x, y, color="tab:blue", label="observations")
 plt.plot(x_plot, y_plot, color="tab:red", label="least-squares fit")
+plt.vlines(
+    x, y_hat, y,
+    colors="tab:orange", linestyles="dashed", label="residuals"
+)
 plt.xlabel("x")
 plt.ylabel("y")
 plt.legend()
@@ -343,6 +353,12 @@ least-squares objective is a convex quadratic. In more complex models, the
 loss surface may no longer be convex, but the pattern remains: define a model,
 measure its error, compute a gradient, and update its parameters.
 
+![Contour map of the sum of squared errors over the intercept and slope, with gradient descent approaching the analytical minimum](/images/least-squares/loss-surface.png)
+
+*Figure 2. Every point represents one candidate line. The contours show its
+sum of squared errors. The star is the analytical solution, while the orange
+path shows gradient descent approaching the same minimum iteratively.*
+
 ## Why least squares is foundational to machine learning
 
 Least squares contains the main ingredients of supervised machine learning in
@@ -357,6 +373,12 @@ their clearest form:
   observed examples.
 - **Evaluation:** residuals, MSE, and performance on unseen data tell us how
   well the learned relationship generalizes.
+
+![Flow diagram connecting training data, a model, squared loss, and an optimizer that updates the model parameters](/images/least-squares/machine-learning-loop.png)
+
+*Figure 3. Least squares makes the supervised-learning loop explicit: use a
+model to predict, measure the error with a loss, and update the parameters to
+reduce that loss.*
 
 The same structure extends immediately beyond fitting a straight line. We can
 add polynomial terms such as $x^2$ and $x^3$, interaction terms such as
