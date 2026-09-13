@@ -187,6 +187,19 @@
   margin: 0.5em 0 2em;
 }
 
+/* Full-width video banner at the top of the Research page */
+.research-banner {
+  margin: 0.4em 0 1.8em;
+
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(#000, 0.14);
+  }
+}
+
 .research-hero {
   display: flex;
   flex-wrap: wrap;
