@@ -385,6 +385,135 @@
 }
 
 /* ==========================================================================
+   PUBLICATIONS (year-grouped bibliography)
+   ========================================================================== */
+.publications { margin-top: 0.5em; }
+
+.pub-year {
+  margin: 1.5em 0 0.6em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid $border-color;
+  color: $headline-color;
+  font-size: $type-size-4;
+  font-weight: 700;
+}
+
+.pub-list {
+  margin: 0 0 1.6em;
+  padding-left: 1.7em;
+  list-style: decimal outside;
+}
+
+.pub-item { margin-bottom: 1.5em; }
+
+.pub-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2em;
+}
+
+.pub-thumb {
+  flex: 0 0 105px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+  }
+}
+
+.pub-abbr {
+  display: inline-block;
+  padding: 0.3em 0.65em;
+  border-radius: 4px;
+  background-color: #eef3f6;
+  color: $headline-color;
+  font-size: 0.72em;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.pub-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.pub-title {
+  margin-bottom: 0.2em;
+  font-weight: 700;
+  line-height: 1.32;
+
+  a {
+    color: $headline-color;
+    text-decoration: none;
+
+    &:visited { color: $headline-color; }
+    &:hover   { color: $headline-color-hover; text-decoration: underline; }
+  }
+}
+
+.pub-authors {
+  margin-bottom: 0.15em;
+  font-size: $type-size-6;
+  line-height: 1.5;
+
+  em { font-style: normal; font-weight: 700; }
+}
+
+.pub-venue {
+  margin-bottom: 0.55em;
+  font-size: $type-size-6;
+  color: $headline-meta-color;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+.pub-btn {
+  display: inline-block;
+  padding: 0.16em 0.62em;
+  border: 1px solid $headline-meta-color;
+  border-radius: 3px;
+  background: transparent;
+  color: $headline-meta-color;
+  font-size: 0.72em;
+  font-weight: 600;
+  line-height: 1.7;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  &:visited { color: $headline-meta-color; }
+
+  &:hover {
+    background-color: $headline-meta-color;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.pub-abstract {
+  margin-top: 0.7em;
+  padding: 0.75em 0.95em;
+  border-left: 3px solid $headline-meta-color;
+  background-color: #f7f9fa;
+  font-size: $type-size-6;
+  line-height: 1.6;
+
+  p { margin: 0; }
+}
+
+@include breakpoint(max-width 600px) {
+  .pub-row { flex-direction: column; gap: 0.6em; }
+  .pub-thumb { flex: none; text-align: left; }
+}
+
+/* ==========================================================================
    RESUME
    ========================================================================== */
 .resume {

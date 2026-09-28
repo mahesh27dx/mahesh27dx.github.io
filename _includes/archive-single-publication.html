@@ -1,0 +1,48 @@
+{% include base_path %}
+
+<li class="pub-item">
+  <div class="pub-row">
+
+    <div class="pub-thumb">
+      {% if post.image %}
+        <img src="{{ post.image | prepend: '/images/' | prepend: base_path }}" alt="{{ post.title }}">
+      {% elsif post.abbr %}
+        <span class="pub-abbr">{{ post.abbr }}</span>
+      {% endif %}
+    </div>
+
+    <div class="pub-body">
+      <div class="pub-title">
+        <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+      </div>
+
+      {% if post.authors %}
+        <div class="pub-authors">{{ post.authors }}</div>
+      {% endif %}
+
+      <div class="pub-venue">
+        {% if post.venue %}<em>{{ post.venue }}</em>{% endif %}{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
+      </div>
+
+      <div class="pub-links">
+        {% if post.abstract %}
+          <button type="button" class="pub-btn pub-btn--abs">Abs</button>
+        {% endif %}
+        {% if post.doi %}
+          <a class="pub-btn" href="{{ post.doi }}" rel="external nofollow noopener" target="_blank">DOI</a>
+        {% endif %}
+        {% if post.paperurl and post.paperurl != '' %}
+          <a class="pub-btn" href="{{ post.paperurl }}" rel="external nofollow noopener" target="_blank">HTML</a>
+        {% endif %}
+        {% if post.pdfurl %}
+          <a class="pub-btn" href="{{ post.pdfurl }}" rel="external nofollow noopener" target="_blank">PDF</a>
+        {% endif %}
+      </div>
+
+      {% if post.abstract %}
+        <div class="pub-abstract" hidden><p>{{ post.abstract }}</p></div>
+      {% endif %}
+    </div>
+
+  </div>
+</li>

@@ -1,0 +1,37 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: false
+---
+
+{% include base_path %}
+
+{% if site.author.googlescholar %}
+  <p>You can also find my articles on
+  <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</p>
+{% endif %}
+
+{% assign pubs = site.publications | sort: 'date' | reverse %}
+{% assign pub_years = pubs | group_by_exp: "p", "p.date | date: '%Y'" | sort: 'name' | reverse %}
+
+<div class="publications">
+  {% for year in pub_years %}
+    <h2 class="pub-year">{{ year.name }}</h2>
+    <ol class="pub-list">
+      {% for post in year.items %}
+        {% include archive-single-publication.html %}
+      {% endfor %}
+    </ol>
+  {% endfor %}
+</div>
+
+<script>
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.pub-btn--abs');
+    if (!btn) { return; }
+    var body = btn.closest('.pub-body');
+    var box = body && body.querySelector('.pub-abstract');
+    if (box) { box.hidden = !box.hidden; }
+  });
+</script>
